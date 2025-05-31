@@ -101,6 +101,38 @@
       gap: 1rem; /* jarak antar tombol */
       flex-wrap: wrap; /* agar tetap rapi di layar kecil */
     }
+
+
+    .install-instructions {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 600px;
+  }
+
+  .install-instructions ol {
+    padding-left: 1.2rem;
+  }
+
+  .install-instructions li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .install-instructions code {
+    background-color: #2d2d2d;
+    color: #d4d4d4;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.95em;
+  }
+
+  .install-instructions strong {
+    font-weight: bold;
+  }
     
   </style>
 </head>
@@ -132,8 +164,17 @@
     </div>
  
 
-  <div class="install">
-      <img src="img/instalasi.png" >
+  <div class="install install-instructions">
+    <strong>Cara Install (untuk Chrome):</strong>
+    <ol>
+      <li>Download file <code>.zip</code> dari tombol di atas.</li>
+      <li>Ekstrak file ZIP di komputer.</li>
+      <li>Pada kolom pencarian Copy/Paste ini ->  <code>chrome://extensions</code></li>
+      <li>lalu, Aktifkan <strong>Developer Mode</strong> (pojok kanan atas).</li>
+      <li>Klik “Load Unpacked”.</li>
+      <li>Pilih folder hasil ekstrak tadi.</li>
+      <li>extension sudah terinstall (klik pada logo puzzle)</li>
+    </ol>
   </div>
 
   <script>
