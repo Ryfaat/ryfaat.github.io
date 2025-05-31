@@ -63,6 +63,8 @@
     }
 
     .download-button {
+      display: inline-flex;
+      align-items: center;
       background-color: #ffd54f;
       color: #121212;
       border: none;
@@ -73,7 +75,6 @@
       cursor: pointer;
       transition: background-color 0.3s ease;
       text-decoration: none;
-      display: inline-block;
     }
 
     .merah{
@@ -81,17 +82,23 @@
     }
 
     .download-button:hover {
-      background-color: #ffca28;
+      background-color: #ffffff;
     }
 
     .icon{
       width: 30px;
-      margin-left: 4px;
+      margin-left: 8px;
     }
 
     .install{
       margin-top: 100px;
       margin-bottom: 100px;
+    }
+
+    .download{
+      display: flex;
+      gap: 1rem; /* jarak antar tombol */
+      flex-wrap: wrap; /* agar tetap rapi di layar kecil */
     }
     
   </style>
@@ -110,15 +117,18 @@
 
       <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
     </div>
+ </div>
 
-    <a href="https://addons.mozilla.org/en-CA/firefox/addon/catatan-stabilo/" class="download-button merah" download>
-       Download untuk Firefox <img src="https://www-assets.kolide.com/assets/inventory/device_properties/icons/firefox-addons-484ee78e.png" class="icon">
-    </a>
-    
-    <a href="asset/catatan-stabiloV2.zip" class="download-button" download>
-       Download untuk Chrome <img src="img/chrome.png" class="icon">
-    </a>
-  </div>
+    <div class=download>
+      <a href="https://addons.mozilla.org/en-CA/firefox/addon/catatan-stabilo/" class="download-button merah" download>
+         <img src="https://www.svgrepo.com/show/510970/external-link.svg" class="icon">‎ ‎ Download untuk Firefox <img src="https://www-assets.kolide.com/assets/inventory/device_properties/icons/firefox-addons-484ee78e.png" class="icon">
+      </a>
+      
+      <a href="asset/catatan-stabiloV2.zip" class="download-button" download>
+        <img src="https://static.thenounproject.com/png/899574-200.png" class="icon">‎ ‎Download untuk Chrome <img src="img/chrome.png" class="icon"> 
+      </a>
+    </div>
+ 
 
   <div class="install">
       <img src="img/instalasi.png" >
